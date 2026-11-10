@@ -15,16 +15,27 @@ disabled = true
 [c]
 disabled = true
 
+[aws]
+disabled = true
+
+
+[git_branch]
+# e.g. "on  main" — or "on  feature:origin/feature" if tracking a differently-named remote branch
+format = 'on [$symbol$branch(:$remote_branch)]($style) '
 
 [git_status]
+# Each part is spelled out with a count, e.g. "2 staged 1 modified 3 untracked ⇡1 to push"
 disabled = false
-ahead = "⇡"
-behind = "⇣"
-conflicted = "🏳"
-renamed = "»"
-deleted = "✘"
-diverged = "⇕"
-modified = "!"
-staged = "+"
-untracked = "?"
-stashed = "📦${count}"
+format = '($all_status$ahead_behind)'
+conflicted  = '[✖ ${count} conflicted](bold red) '
+stashed     = '[≡ ${count} stashed](purple) '
+deleted     = '[✘ ${count} deleted](red) '
+renamed     = '[» ${count} renamed](yellow) '
+modified    = '[● ${count} modified](yellow) '
+typechanged = '[${count} type-changed](yellow) '
+staged      = '[✚ ${count} staged](green) '
+untracked   = '[? ${count} untracked](blue) '
+ahead       = '[⇡ ${count} to push](cyan) '
+behind      = '[⇣ ${count} to pull](bold red) '
+diverged    = '[⇕ diverged: ${ahead_count} to push, ${behind_count} to pull](bold yellow) '
+up_to_date  = '[✓ synced](dimmed green) '

@@ -1,0 +1,4 @@
+-- Linux-only overrides.
+-- lua/config/options.lua and lua/config/keymaps.lua hold settings shared
+-- across every machine; put anything Linux-specific (clipboard tooling,
+-- GUI font, Linux-only plugins) here.
