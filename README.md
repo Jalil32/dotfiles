@@ -5,6 +5,7 @@ Config shared between my work and personal Macs.
 | In this repo      | Linked to                 |
 | ----------------- | ------------------------- |
 | `nvim/`           | `~/.config/nvim`          |
+| `ghostty/`        | `~/.config/ghostty`       |
 | `.tmux.conf`      | `~/.tmux.conf`            |
 | `starship.toml`   | `~/.config/starship.toml` |
 | `.aerospace.toml` | `~/.aerospace.toml`       |

@@ -43,6 +43,7 @@ link .tmux.conf      "$HOME/.tmux.conf"
 link starship.toml   "$HOME/.config/starship.toml"
 link .aerospace.toml "$HOME/.aerospace.toml"
 link nvim            "$HOME/.config/nvim"
+link ghostty         "$HOME/.config/ghostty"
 
 echo
 echo "Done. To pick up changes:"

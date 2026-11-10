@@ -1,0 +1,41 @@
+# Ghostty config — reload with Cmd+Shift+,
+# All options: `ghostty +show-config --default --docs`
+
+# --- Theme ---
+# Browse themes with live preview: `ghostty +list-themes`
+theme = nextjs
+# Interpret hex colours as Display P3 (the nextjs theme's colours are P3, like the website's)
+window-colorspace = display-p3
+# Bold text uses the bright palette variants (e.g. Starship's "bold green")
+bold-is-bright = true
+# theme = TokyoNight Night
+# Or follow macOS light/dark mode:
+# theme = light:TokyoNight Day,dark:TokyoNight Night
+
+# --- Font ---
+# Default is JetBrains Mono with built-in Nerd Font symbols.
+# See installed fonts with `ghostty +list-fonts`
+# font-family = "JetBrainsMono Nerd Font"
+# Geist Mono = the Next.js docs code font (Nerd Font icons come from Ghostty's built-in fallback)
+font-family = "Geist Mono"
+# Regular is quite thin; Medium reads better. Bold stays Bold.
+font-style = Medium
+font-style-bold = Bold
+font-style-italic = Medium Italic
+font-style-bold-italic = Bold Italic
+font-size = 12
+
+# --- Window ---
+macos-titlebar-style = hidden
+window-padding-x = 12
+window-padding-y = 12
+window-padding-balance = true
+background-opacity = 1
+background-blur = true
+# background-opacity-cells stays off: it made tmux pill bodies translucent while their
+# rounded glyph caps stayed opaque. Neovim is transparent via bg = "NONE" in colors/nextjs.lua.
+
+# --- Cursor ---
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
